@@ -11,4 +11,17 @@ public class App {
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
     }
+
+    //Fields for quotes
+    private String author;
+    private Integer likes;
+    private String text;
+    private ArrayList<Quotes> quotes; // List of quotes
+
+    //Constructor for Quotes
+    public App(String author, Integer likes, String text) {
+        this.author = author;
+        this.likes = likes;
+        this.text = text;
+        this.quotes = new ArrayList<>(); // Init list
 }
