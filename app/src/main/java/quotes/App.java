@@ -3,60 +3,77 @@
  */
 package quotes;
 
+import java.util.ArrayList;
+
 public class App {
     public String getGreeting() {
         return "Hello World!";
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         System.out.println(new App().getGreeting());
-    }
-
-    //Fields for quotes
-    private String author;
-    private Integer likes;
-    private String text;
-    private ArrayList<Quotes> quotes; // List of quotes
-
-    //Constructor for Quotes
-    public App(String author, Integer likes, String text) {
-        this.author = author;
-        this.likes = likes;
-        this.text = text;
-        this.quotes = new ArrayList<>(); // Init list
-
-    }
-
-    public String getAuthor() {
-        return author;
-    }
-
-    public void setAuthor(String author) {
-        this.author = author;
-    }
 
 
-    public Integer getLikes() {
-        return likes;
-    }
+        //Fields for quotes
+        private String author;
+        private Integer likes;
+        private String text;
+        private ArrayList<Quotes> quotes; // List of quotes
 
-    public void setLikes(Integer likes) {
-        this.likes = likes;
-    }
+        //Constructor for Quotes
+        public App(String author, Integer likes, String text) {
+            this.author = author;
+            this.likes = likes;
+            this.text = text;
+            this.quotes = new ArrayList<>(); // Init list
 
-    public String getText() {
-        return text;
-    }
+        }
+        //Getting Random Quote
+        public void randomQuote (Quotes quotes){
 
-    public void setText(String text) {
-        this.text = text;
-    }
+        }
 
-    public ArrayList<Quotes> getQuotes() {
-        return quotes;
-    }
 
-    public void setQuotes(ArrayList<Quotes> quotes) {
-        this.quotes = quotes;
+        public String getAuthor () {
+            return author;
+        }
+
+        public void setAuthor (String author){
+            this.author = author;
+        }
+
+
+        public Integer getLikes () {
+            return likes;
+        }
+
+        public void setLikes (Integer likes){
+            this.likes = likes;
+        }
+
+        public String getText () {
+            return text;
+        }
+
+        public void setText (String text){
+            this.text = text;
+        }
+
+        public ArrayList<Quotes> getQuotes () {
+            return quotes;
+        }
+
+        public void setQuotes (ArrayList < Quotes > quotes) {
+            this.quotes = quotes;
+        }
+
+        // Quote
+        @Override
+        public String toString () {
+            return "Quotes{" +
+                    "author='" + author + '\'' +
+                    ", text=" + text + '\'' +
+                    '}';
+        }
     }
 }
