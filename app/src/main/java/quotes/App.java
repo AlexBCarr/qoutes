@@ -24,4 +24,39 @@ public class App {
         this.likes = likes;
         this.text = text;
         this.quotes = new ArrayList<>(); // Init list
+
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+
+    public Integer getLikes() {
+        return likes;
+    }
+
+    public void setLikes(Integer likes) {
+        this.likes = likes;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    public ArrayList<Quotes> getQuotes() {
+        return quotes;
+    }
+
+    public void setQuotes(ArrayList<Quotes> quotes) {
+        this.quotes = quotes;
+    }
 }
